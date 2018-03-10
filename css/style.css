@@ -1,0 +1,314 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Global reset ends here */
+/*base css*/
+h1 {
+  font-family: 'Permanent marker', sans-serif;
+  font-size: 200%;
+  line-height: 100%;
+  color: white;
+  text-transform: uppercase;
+}
+h2 {
+  font-family: 'Permanent marker', sans-serif;
+  font-size: 250%;
+  line-height: 100%;
+  color: white;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 150%;
+  line-height: 100%;
+  color: white;
+  text-transform: capitalize;
+  padding-top: 10px;
+}
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 90%;
+  line-height: 150%;
+  color: white;
+  text-transform: capitalize;
+  padding-top: 10px;
+  align-self: flex-end;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 120%;
+  line-height: 150%;
+  color: white;
+  text-transform: none;
+  padding-top: 10px;
+}
+.black {
+  background-color: black;
+}
+.dark {
+  background-color: #333333;
+}
+.grey {
+  background-color: #747474;
+}
+.light {
+  background-color: #b1b1b1;
+}
+.white {
+  background-color: white;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 200%;
+  outline:none;
+}
+.page-title {
+  width: 100%;
+  text-align: center;
+  margin-top: -15px;
+}
+/*base css end*/
+/*Header CSS*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index:99;
+  height: 80px;
+}
+.title {
+  margin: auto;
+}
+.under-title {
+  display: none;
+}
+.home-button {
+  text-align: center;
+  position: absolute;
+  left: -50px;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+.menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  align-self: center;
+  margin: 15px 0;
+}
+.round {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.menu-button {
+  text-align: center;
+  position: absolute;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+}
+.mi i {
+  cursor: pointer;
+  color: white;
+  font-size: 38px;
+}
+.menu-links {
+  height: 50px;
+  width: 25px;
+  justify-content: flex-end;
+}
+.project h3, .about h3{
+  padding: 0 50px 0 20px;
+  white-space: nowrap;
+}
+/*Slide.JS css*/
+.container {
+  margin:110px auto 0;
+  width: 100%;
+}
+.slide { /*add class to all slides*/
+  display: none;
+  width: 100%;
+}
+/*navigation*/
+.slidesjs-navigation {
+  margin-top:3px;
+  margin-right: 5px;
+  float: left;
+}
+.slidesjs-previous {
+
+}
+.slidesjs-next {
+
+}
+/*pagination*/
+.slidesjs-pagination {
+  margin: 6px 0 0;
+  float: right;
+  list-style: none;
+}
+.slidesjs-pagination li {
+  float: left;
+  margin: 0 1px;
+}
+.slidesjs-pagination li a {
+  display: block;
+  width: 13px;
+  height: 0;
+  padding-top: 13px;
+  background-image: url(../img/pagination.png);
+  background-position: 0 0;
+  float: left;
+  overflow: hidden;
+}
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+  background-position: 0 -13px;
+}
+.slidesjs-pagination li a:hover {
+  background-position: 0 -26px;
+}
+/*links*/
+a {
+  text-decoration: none;
+  color: #b1b1b1;
+}
+a:link,
+a:visited {
+  color: #b1b1b1;
+}
+a:hover,
+a:active {
+  color: #747474;
+}
+/*Projects-specifik css*/
+.wrap {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.big-thumb {
+  background-color: white;
+  width: 100%;
+  margin: 0 0 6vw;
+  cursor: pointer;
+}
+.big-thumb img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.big-thumb:hover img {
+  opacity: .5;
+}
+.fade {
+  opacity: .5;
+}
+.description {
+  width: 95%;
+  margin: auto;
+}
+.case-image {
+  width: 100%;
+  padding: 2% 0;
+}
+@media (orientation: landscape) and (min-width: 810px) {
+  /*Header CSS*/
+  .title {
+    margin-left: 100px;
+  }
+  .under-title {
+    display: inline;
+    padding-left: 10px;
+    margin-bottom: -2px;
+  }
+  .round {
+    right: 300px;
+  }
+  .thumbs {
+    width: 80%;
+    margin: auto;
+  }
+  .menu-links {
+    width: 325px;
+  }
+  /*Projects-specifik css*/
+  .big-thumb {
+    width: 31%;
+    margin: 0 .917vw 1.834vw;
+  }
+  /*Case-specifik css*/
+  .description {
+  width: 65%;
+  margin: 0;
+  }
+  .case {
+    width: 80%;
+    margin: auto;
+  }
+}
+/*Allmän CSS igen*/
+.hide {
+  display: none;
+}
