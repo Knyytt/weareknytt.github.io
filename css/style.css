@@ -272,7 +272,7 @@ a:active {
   .back-button {
     text-align: center;
     position: absolute;
-    left: 5px;
+    left: 25px;
     top: 95px;
     justify-content: center;
     align-items: center;
