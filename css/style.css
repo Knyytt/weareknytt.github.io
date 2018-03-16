@@ -326,6 +326,7 @@ a:active {
 .landing h4 {
   font-size: 300%;
   align-self: center;
+  display: inline;
 }
 /*allmänt*/
 .hide {
