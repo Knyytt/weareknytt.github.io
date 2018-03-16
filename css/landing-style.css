@@ -1,0 +1,23 @@
+.landing {
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  margin: auto;
+}
+.landing h1 {
+  font-size: 200%;
+}
+.landing h4 {
+  font-size: 140%;
+  align-self: center;
+  display: inline;
+  padding: 0;
+}
+@media (orientation: landscape) and (min-width: 810px) {
+  .landing h1 {
+    font-size: 500%;
+  }
+  .landing h4 {
+    font-size: 350%;
+  }
+}
