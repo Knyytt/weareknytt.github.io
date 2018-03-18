@@ -8,17 +8,150 @@
   font-size: 200%;
   text-align: center;
 }
-.landing h4 {
-  font-size: 140%;
+.landing svg {
+  width: 160px;
   align-self: center;
   display: inline;
-  padding: 0;
+}
+#g1 {
+  stroke-dasharray: 150px;
+  stroke-dashoffset: 150px;
+  animation: offset 1s 0s linear forwards;
+}
+#r1-line {
+  stroke-dasharray: 40px;
+  stroke-dashoffset: 40px;
+  animation: offset .5s 0s linear forwards;
+}
+#r1-curve {
+  stroke-dasharray: 22px;
+  stroke-dashoffset: 22px;
+  animation: offset .5s .5s linear forwards;
+}
+#a-curve {
+  stroke-dasharray: 65px;
+  stroke-dashoffset: 65px;
+  animation: offset .5s 0s linear forwards;
+}
+#a-belly {
+  stroke-dasharray: 67px;
+  stroke-dashoffset: 67px;
+  animation: offset .5s .5s linear forwards;
+}
+#f-cane {
+  stroke-dasharray: 62px;
+  stroke-dashoffset: 62px;
+  animation: offset .5s 0s linear forwards;
+}
+#f-line {
+  stroke-dasharray: 20px;
+  stroke-dashoffset: 20px;
+  animation: offset .5s .5s linear forwards;
+}
+#i1-line {
+  stroke-dasharray: 37px;
+  stroke-dashoffset: 37px;
+  animation: offset 1s 0s linear forwards;
+}
+#i1-dot {
+  opacity: 0;
+  animation: fade-in .5s 1.5s linear forwards;
+}
+#s1 {
+  stroke-dasharray: 101px;
+  stroke-dashoffset: 101px;
+  animation: offset 1s 0s linear forwards;
+}
+#k-vertical {
+  stroke-dasharray: 53px;
+  stroke-dashoffset: 53px;
+  animation: offset .4s 0s linear forwards;
+}
+#k-up {
+  stroke-dasharray: 32px;
+  stroke-dashoffset: 32px;
+  animation: offset .3s .4s linear forwards;
+}
+#k-down {
+  stroke-dasharray: 28px;
+  stroke-dashoffset: 28px;
+  animation: offset .3s .7s linear forwards;
+}
+#d-line {
+  stroke-dasharray: 50px;
+  stroke-dashoffset: 50px;
+  animation: offset .4s 0s linear forwards;
+}
+#d-belly {
+  stroke-dasharray: 96px;
+  stroke-dashoffset: 96px;
+  animation: offset .6s .4s linear forwards;
+}
+#e1 {
+  stroke-dasharray: 118px;
+  stroke-dashoffset: 118px;
+  animation: offset 1s 0s linear forwards;
+}
+#s2 {
+  stroke-dasharray: 101px;
+  stroke-dashoffset: 101px;
+  animation: offset 1s 0s linear forwards;
+}
+#i2-line {
+  stroke-dasharray: 37px;
+  stroke-dashoffset: 37px;
+  animation: offset 1s 0s linear forwards;
+}
+#i2-dot {
+  opacity: 0;
+  animation: fade-in .5s 1.5s linear forwards;
+}
+#g2-belly {
+  stroke-dasharray: 88px;
+  stroke-dashoffset: 88px;
+  animation: offset .5s 0s linear forwards;
+}
+#g2-hanger {
+  stroke-dasharray: 72px;
+  stroke-dashoffset: 72px;
+  animation: offset .5s .5s linear forwards;
+}
+#n-line {
+  stroke-dasharray: 37px;
+  stroke-dashoffset: 37px;
+  animation: offset .3s 0s linear forwards;
+}
+#n-curve {
+  stroke-dasharray: 65px;
+  stroke-dashoffset: 65px;
+  animation: offset .7s .3s linear forwards;
+}
+#e2 {
+  stroke-dasharray: 118px;
+  stroke-dashoffset: 118px;
+  animation: offset 1s 0s linear forwards;
+}
+#r2-line {
+  stroke-dasharray: 37px;
+  stroke-dashoffset: 37px;
+  animation: offset .5s 0s linear forwards;
+}
+#r2-curve {
+  stroke-dasharray: 22px;
+  stroke-dashoffset: 22px;
+  animation: offset .5s .5s linear forwards;
 }
 @media (orientation: landscape) and (min-width: 810px) {
   .landing h1 {
     font-size: 500%;
   }
-  .landing h4 {
-    font-size: 350%;
+  .landing svg {
+    width: 390px;
   }
+}
+@keyframes offset {
+  to {stroke-dashoffset: 0px;}
+}
+@keyframes fade-in {
+  to {opacity: 1;}
 }
