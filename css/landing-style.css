@@ -13,133 +13,138 @@
   align-self: center;
   display: inline;
 }
-#g1 {
-  stroke-dasharray: 150px;
-  stroke-dashoffset: 150px;
-  animation: offset 1s 0s linear forwards;
+#g1-belly {
+  stroke-dasharray: 111px;
+  stroke-dashoffset: -111px;
+  animation: offset .38s 0s ease-in-out forwards;
+}
+#g1-angle {
+  stroke-dasharray: 33px;
+  stroke-dashoffset: 33px;
+  animation: offset .12s .39s ease-in-out forwards;
 }
 #r1-line {
   stroke-dasharray: 40px;
   stroke-dashoffset: 40px;
-  animation: offset .5s 0s linear forwards;
+  animation: offset .1333s .7s ease-in-out forwards;
 }
 #r1-curve {
   stroke-dasharray: 22px;
-  stroke-dashoffset: 22px;
-  animation: offset .5s .5s linear forwards;
+  stroke-dashoffset: -22px;
+  animation: offset .0667s .95s ease-in-out forwards;
 }
 #a-curve {
   stroke-dasharray: 65px;
   stroke-dashoffset: 65px;
-  animation: offset .5s 0s linear forwards;
+  animation: offset .23s 1.22s ease-in-out forwards;
 }
 #a-belly {
   stroke-dasharray: 67px;
   stroke-dashoffset: 67px;
-  animation: offset .5s .5s linear forwards;
+  animation: offset .23s 1.48s ease-in-out forwards;
 }
 #f-cane {
   stroke-dasharray: 62px;
   stroke-dashoffset: 62px;
-  animation: offset .5s 0s linear forwards;
+  animation: offset .2s 1.91s ease-in-out forwards;
 }
 #f-line {
   stroke-dasharray: 20px;
-  stroke-dashoffset: 20px;
-  animation: offset .5s .5s linear forwards;
+  stroke-dashoffset: -20px;
+  animation: offset .0665s 2.21s ease-in-out forwards;
 }
 #i1-line {
   stroke-dasharray: 37px;
   stroke-dashoffset: 37px;
-  animation: offset 1s 0s linear forwards;
+  animation: offset .12s 2.33s ease-in-out forwards;
 }
 #i1-dot {
   opacity: 0;
-  animation: fade-in .5s 1.5s linear forwards;
+  animation: fade-in .2s 2.55s ease-in-out forwards;
 }
 #s1 {
   stroke-dasharray: 101px;
-  stroke-dashoffset: 101px;
-  animation: offset 1s 0s linear forwards;
+  stroke-dashoffset: -101px;
+  animation: offset .5s 2.95s ease-in-out forwards;
 }
 #k-vertical {
   stroke-dasharray: 53px;
   stroke-dashoffset: 53px;
-  animation: offset .4s 0s linear forwards;
+  animation: offset .18s 3.65s ease-in-out forwards;
 }
 #k-up {
   stroke-dasharray: 32px;
   stroke-dashoffset: 32px;
-  animation: offset .3s .4s linear forwards;
+  animation: offset .11s 3.88s ease-in-out forwards;
 }
 #k-down {
   stroke-dasharray: 28px;
-  stroke-dashoffset: 28px;
-  animation: offset .3s .7s linear forwards;
+  stroke-dashoffset: -28px;
+  animation: offset .1s 4.03s ease-in-out forwards;
 }
 #d-line {
   stroke-dasharray: 50px;
   stroke-dashoffset: 50px;
-  animation: offset .4s 0s linear forwards;
+  animation: offset .15s 4.43s ease-in-out forwards;
 }
 #d-belly {
   stroke-dasharray: 96px;
   stroke-dashoffset: 96px;
-  animation: offset .6s .4s linear forwards;
+  animation: offset .32s 4.7s ease-in-out forwards;
 }
 #e1 {
   stroke-dasharray: 118px;
-  stroke-dashoffset: 118px;
-  animation: offset 1s 0s linear forwards;
+  stroke-dashoffset: -118px;
+  animation: offset .383s 5.24s ease-in-out forwards;
 }
 #s2 {
   stroke-dasharray: 101px;
-  stroke-dashoffset: 101px;
-  animation: offset 1s 0s linear forwards;
+  stroke-dashoffset: -101px;
+  animation: offset .333s 5.823s ease-in-out forwards;
 }
 #i2-line {
   stroke-dasharray: 37px;
   stroke-dashoffset: 37px;
-  animation: offset 1s 0s linear forwards;
+  animation: offset .1333s 6.34s ease-in-out forwards;
 }
 #i2-dot {
   opacity: 0;
-  animation: fade-in .5s 1.5s linear forwards;
+  animation: fade-in .2s 6.57s ease-in-out forwards;
 }
 #g2-belly {
   stroke-dasharray: 88px;
-  stroke-dashoffset: 88px;
-  animation: offset .5s 0s linear forwards;
+  stroke-dashoffset: -88px;
+  animation: offset .3s 6.97s ease-in-out forwards;
 }
 #g2-hanger {
   stroke-dasharray: 72px;
   stroke-dashoffset: 72px;
-  animation: offset .5s .5s linear forwards;
+  animation: offset .2333s 7.3s ease-in-out forwards;
 }
 #n-line {
   stroke-dasharray: 37px;
   stroke-dashoffset: 37px;
-  animation: offset .3s 0s linear forwards;
+  animation: offset .13s 7.8s ease-in-out forwards;
 }
 #n-curve {
   stroke-dasharray: 65px;
-  stroke-dashoffset: 65px;
-  animation: offset .7s .3s linear forwards;
+  stroke-dashoffset: -65px;
+  animation: offset .215s 8.06s ease-in-out forwards;
 }
 #e2 {
   stroke-dasharray: 118px;
-  stroke-dashoffset: 118px;
-  animation: offset 1s 0s linear forwards;
+  stroke-dashoffset: -118px;
+  animation: offset .383s 8.46s ease-in-out forwards;
 }
 #r2-line {
   stroke-dasharray: 37px;
   stroke-dashoffset: 37px;
-  animation: offset .5s 0s linear forwards;
+  animation: offset .13s 9s ease-in-out forwards;
 }
 #r2-curve {
   stroke-dasharray: 22px;
-  stroke-dashoffset: 22px;
-  animation: offset .5s .5s linear forwards;
+  stroke-dashoffset: -22px;
+  animation: offset .0667s 9.25s ease-in-out forwards;
 }
 @media (orientation: landscape) and (min-width: 810px) {
   .landing h1 {
