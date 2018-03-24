@@ -210,6 +210,12 @@ button {
   font-size: 60%;
   padding-top: 6vh;
 }
+.more {
+	align-items: flex-end;
+}
+.more i {
+	font-size: 60px
+}
 /*Slide.JS css*/
 .container {
   margin:110px auto 0;
