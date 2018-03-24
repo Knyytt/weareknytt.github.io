@@ -60,7 +60,7 @@
 }
 #i1-dot {
   opacity: 0;
-  animation: fade-in .4s 1.9s ease-in-out forwards;
+  animation: fade-in .8s 2.5s ease-in-out forwards;
 }
 #s1 {
   stroke-dasharray: 101px;
@@ -109,7 +109,7 @@
 }
 #i2-dot {
   opacity: 0;
-  animation: fade-in .4s 1.9s ease-in-out forwards;
+  animation: fade-in .8s 2.5s ease-in-out forwards;
 }
 #g2-belly {
   stroke-dasharray: 88px;
