@@ -5,7 +5,7 @@
   margin: auto;
 }
 .landing h1 {
-  font-size: 200%;
+  font-size: 2rem;
   text-align: center;
 }
 .landing svg {
@@ -148,7 +148,7 @@
 }
 @media (orientation: landscape) and (min-width: 810px) {
   .landing h1 {
-    font-size: 500%;
+    font-size: 5rem;
   }
   .landing svg {
     width: 390px;
