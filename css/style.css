@@ -352,6 +352,7 @@ a:active {
   .big-thumb img {
     width: auto;
     height: 100%;
+    top: auto;
     left: 50%;
     transform: translateX(-50%);
   }
