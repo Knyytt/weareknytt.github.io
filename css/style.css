@@ -50,18 +50,18 @@ table {
 /*base css*/
 h1 {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 100%;
-  color: white;
-}
-h2 {
-  font-family: 'Josefin Sans', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 100%;
   color: white;
   padding-bottom: 15px;
+}
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 100%;
+  color: white;
 }
 h3 {
   font-family: 'Josefin Sans', sans-serif;
@@ -103,6 +103,9 @@ p {
 .white {
   background-color: white;
 }
+.centered {
+  text-align: center;
+}
 .flex {
   display: flex;
   justify-content: space-between;
@@ -110,6 +113,9 @@ p {
 }
 .column {
   flex-direction: column;
+  align-items: flex-start;
+}
+.align-start {
   align-items: flex-start;
 }
 button {
@@ -298,7 +304,7 @@ a:active {
   overflow: hidden;
   filter: contrast(100%);
 }
-.big-thumb h2 {
+.big-thumb h1 {
   position: fixed;
   bottom: 0;
   margin: 0px calc(100vw/2);
@@ -324,9 +330,15 @@ a:active {
 .fade {
   opacity: .5;
 }
-.description {
+.case h1 {
+  text-align: center;
+}
+.inner-container {
   width: 95%;
   margin: auto;
+}
+.half-container {
+  width: 49%;
 }
 .case-image {
   width: 100%;
@@ -365,7 +377,7 @@ a:active {
     left: 50%;
     transform: translateX(-50%);
   }
-  .big-thumb h2 {
+  .big-thumb h1 {
     margin: 20px calc(100vw/6);
   }
   .gradient-black {
@@ -406,12 +418,8 @@ a:active {
     height: calc(100vh - 80px);
   }
   /*Case-specifik css*/
-  .description {
-  width: 65%;
-  margin: 0;
-  }
   .case {
-    width: 80%;
+    width: 85%;
     margin: auto;
   }
 }
