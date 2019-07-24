@@ -54,7 +54,6 @@ h1 {
   font-weight: 700;
   line-height: 100%;
   color: white;
-  padding-bottom: 15px;
 }
 h2 {
   font-family: 'Josefin Sans', sans-serif;
@@ -62,6 +61,7 @@ h2 {
   font-weight: 700;
   line-height: 100%;
   color: white;
+  padding-top: 20px;
 }
 h3 {
   font-family: 'Josefin Sans', sans-serif;
@@ -82,7 +82,7 @@ h4 {
 }
 p {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 150%;
   color: white;
@@ -114,6 +114,9 @@ p {
 .column {
   flex-direction: column;
   align-items: flex-start;
+}
+.mobile-column {
+  flex-direction: column;
 }
 .align-start {
   align-items: flex-start;
@@ -226,8 +229,16 @@ button {
 }
 /*Slide.JS css*/
 .container {
-  margin:110px auto 0;
+  margin:80px auto 0;
   width: 100%;
+}
+.desktop-video {
+  display: none;
+}
+.mobile-video {
+  display: block;
+  width: 100% ;
+  height: 50%;
 }
 .slide { /*add class to all slides*/
   display: none;
@@ -335,16 +346,17 @@ a:active {
 }
 .inner-container {
   width: 95%;
-  margin: auto;
-}
-.half-container {
-  width: 49%;
+  margin: 15px auto 0;
 }
 .case-image {
-  width: 100%;
-  padding: 2% 0;
+  width: 100vw;
+  padding: 1% 0;
+  transform: translateX(-2.5%);
 }
 @media (orientation: landscape) and (min-width: 810px) {
+  .mobile-column {
+    flex-direction: row;
+  }
   /*Header CSS*/
   .back-button {
     text-align: center;
@@ -413,9 +425,23 @@ a:active {
     color: white;
   }
   /*Projects-specifik css*/
+  .desktop-video {
+    display: block;
+    width: 75%;
+    margin: auto;
+  }
+  .mobile-video {
+    display: none;
+  }
+  .half-container {
+    width: 49%;
+  }
   .big-thumb {
     width: 33.333333333333%;
     height: calc(100vh - 80px);
+  }
+  .case-image {
+    width: 100%;
   }
   /*Case-specifik css*/
   .case {
