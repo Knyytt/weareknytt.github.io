@@ -50,7 +50,7 @@ table {
 /*base css*/
 h1 {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 100%;
   color: white;
@@ -314,6 +314,7 @@ a:active {
   cursor: pointer;
   overflow: hidden;
   filter: contrast(100%);
+  text-align: center;
 }
 .big-thumb h1 {
   position: fixed;
@@ -331,6 +332,34 @@ a:active {
 .big-thumb:hover {
   opacity: .5;
 }
+.square {
+  height: 100%;
+  background-color: white;
+  cursor: default;
+}
+.square:hover {
+  opacity: 1;
+}
+.square img {
+  width: 100%;
+  height: auto;
+  top: 0;
+  transform: none;
+}
+.square:hover img{
+  opacity: .5;
+}
+.square h1 {
+  margin: auto;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(+50%);
+  display: none;
+  color: #333333;
+}
+.square:hover h1 {
+  display: inline;
+}
 .gradient-black {
   position: fixed;
   width: 100%;
@@ -346,7 +375,13 @@ a:active {
 }
 .inner-container {
   width: 95%;
-  margin: 15px auto 0;
+  margin: 50px auto 0;
+}
+.half-container {
+  width: 100%;
+}
+.case-parts {
+  margin-top: 40px;
 }
 .case-image {
   width: 100vw;
@@ -392,9 +427,19 @@ a:active {
   .big-thumb h1 {
     margin: 20px calc(100vw/6);
   }
+  .square img {
+    width: 100%;
+    height: auto;
+    left: 0;
+    transform: none;
+  }
+  .square h1 {
+    margin: auto;
+  }
   .gradient-black {
     width: calc(100vw/3);
   }
+
   .menu-links {
     width: 325px;
   }
@@ -427,8 +472,8 @@ a:active {
   /*Projects-specifik css*/
   .desktop-video {
     display: block;
-    width: 75%;
-    margin: auto;
+    width: 100vw;
+    transform: translateX(-7.5%);
   }
   .mobile-video {
     display: none;
@@ -440,8 +485,12 @@ a:active {
     width: 33.333333333333%;
     height: calc(100vh - 80px);
   }
+  .square {
+    height: auto;
+  }
   .case-image {
     width: 100%;
+    transform: none;
   }
   /*Case-specifik css*/
   .case {
