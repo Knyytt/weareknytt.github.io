@@ -88,6 +88,10 @@ p {
   color: white;
   padding-top: 10px;
 }
+.smaller {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
 .black {
   background-color: black;
 }
@@ -121,6 +125,22 @@ p {
 .align-start {
   align-items: flex-start;
 }
+.icon-grid {
+  display: grid;
+  grid-template-columns: [icons] min-content [text] auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-rows: auto;
+}
+.icon-grid i {
+  grid-column: icons;
+  justify-self: center;
+
+}
+.icon-grid p {
+  grid-column: text
+  align-self: center;
+}
 button {
   background-color: transparent;
   border: none;
@@ -146,9 +166,13 @@ button {
   z-index:99;
   height: 80px;
 }
-.header img {
-  height: 50px;
+.menu img {
+  height: 70px;
+  margin: 5px;
+}
+.headerlogo {
   margin-left: 50px;
+  height: 50px;
 }
 .under-title {
   display: none;
@@ -158,10 +182,9 @@ button {
 }
 .menu {
   position: absolute;
-  right: 0;
+  right: 10px;
   top: 0;
   align-self: center;
-  margin: 15px 0;
 }
 .round {
   width: 50px;
@@ -208,8 +231,8 @@ button {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.info i {
-  font-size: 60px;
+i {
+  font-size: 3rem;
   color: white;
 }
 .icons {
@@ -287,6 +310,7 @@ button {
 a {
   text-decoration: none;
   color: #b1b1b1;
+  cursor: pointer;
 }
 a:link,
 a:visited {
