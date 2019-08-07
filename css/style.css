@@ -136,7 +136,7 @@ li {
 
 }
 .icon-grid p {
-  grid-column: text
+  grid-column: text;
   align-self: center;
 }
 button {
