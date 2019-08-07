@@ -135,7 +135,7 @@ li {
   justify-self: center;
 
 }
-.icon-grid p {
+.icon-grid p, .icon-grid a {
   grid-column: text;
   align-self: center;
 }
