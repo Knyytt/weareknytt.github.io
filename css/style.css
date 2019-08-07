@@ -48,49 +48,43 @@ table {
 }
 /* Global reset ends here */
 /*base css*/
-h1 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 100%;
-  color: white;
-}
-h2 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 100%;
-  color: white;
-  padding-top: 20px;
-}
-h3 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 150%;
-  color: white;
-  padding-top: 10px;
-}
-h4 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: .9rem;
-  font-weight: 700;
-  line-height: 150%;
-  color: white;
-  padding-top: 10px;
-  align-self: flex-end;
-}
-p {
+body {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 150%;
   color: white;
-  padding-top: 10px;
   width: 100%;
 }
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 100%;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 100%;
+  padding-top: 20px;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+h4 {
+  font-size: .9rem;
+  font-weight: 700;
+  align-self: flex-end;
+}
+li {
+  font-style: italic;
+}
+.small {
+  font-size: 2rem;
+  font-weight: 700;
+}
 .smaller {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 .black {
@@ -125,6 +119,9 @@ p {
 }
 .align-start {
   align-items: flex-start;
+}
+.align-end {
+  align-self: flex-end;
 }
 .icon-grid {
   display: grid;
@@ -191,6 +188,8 @@ button {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  justify-content: center;
+  line-height: 1;
 }
 .menu-button {
   text-align: center;
@@ -253,7 +252,7 @@ i {
 }
 /*Slide.JS css*/
 .container {
-  margin:0 auto;
+  margin:0 auto 40px;;
   width: 100%;
 }
 .desktop-video {
@@ -419,6 +418,43 @@ a:active {
   padding: 5px 0;
   transform: translateX(-2.5%);
 }
+.blog-post {
+  width: 100%;
+}
+.blog-archive ul {
+  list-style-type: none;
+  padding: 5px 10px;
+}
+.box {
+  width: 100%;
+  color: #333333;
+}
+.box h3 {
+  padding: 10px 10px 5px;
+}
+.blog-post h2 {
+  padding: 0;
+}
+.blog-post h2 span {
+  font-size: 1.5rem
+}
+.blog-post img {
+  width: 100%;
+  height: 100%;
+  padding: 5px 0;
+}
+.blog-post hr {
+  width: 80%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+.post h2 {
+  padding-top: 20px;
+}
+.mobile-hide {
+  display: none;
+}
 @media (orientation: landscape) and (min-width: 810px) {
   .mobile-column {
     flex-direction: row;
@@ -440,9 +476,6 @@ a:active {
     display: inline;
     padding-left: 10px;
     margin-bottom: -2px;
-  }
-  .round {
-    right: 300px;
   }
   .thumbs {
     width: 100%;
@@ -523,10 +556,21 @@ a:active {
     height: 100%;
     transform: none;
   }
-  /*Case-specifik css*/
   .case {
-    width: 85%;
+    width: 75%;
     margin: auto;
+  }
+  .mobile-hide {
+    display: block;
+  }
+  .blog-archive {
+    width: 18%;
+  }
+  .blog-post {
+    width: 80%;
+  }
+  .post img {
+    width: 49%;
   }
 }
 /*Allmän CSS igen*/
