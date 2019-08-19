@@ -94,7 +94,7 @@ li {
   font-weight: 400;
 }
 .black {
-  background-color: black;
+  background-color: #535b36;
 }
 .dark {
   background-color: #333333;
@@ -169,6 +169,9 @@ button {
   width: 100%;
   z-index:99;
   height: 80px;
+  -moz-box-shadow:    0px 0px 10px 0px black;
+  -webkit-box-shadow: 0px 0px 10px 0px black;
+  box-shadow:         0px 0px 10px 0px black;
 }
 .menu img {
   height: 70px;
