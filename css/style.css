@@ -470,6 +470,19 @@ a:active {
 .preview-link:hover {
   opacity: .7;
 }
+.half {
+  height: calc((100vh - 80px)/2);;
+}
+.half img {
+      top: calc((100vh - 80px)/4);
+      height: 100%;
+      width: auto;
+      margin: 0px calc(100vw/2);
+      transform: translateY(-50%)translateX(-50%);
+}
+.fill  {
+  width: 100%;
+}
 @media (orientation: landscape) and (min-width: 810px) {
   .mobile-column {
     flex-direction: row;
@@ -587,6 +600,19 @@ a:active {
   .post img {
     width: 49%;
   }
+  .half {
+    width: 50%;
+  }
+  .full {
+    width: calc(100vw/2);
+  }
+  .half h1 {
+    margin: 20px calc(100vw/4);
+  }
+  .half img {
+        margin: auto;
+        transform: translateX(-50%);
+  }
 }
 /*Allmän CSS igen*/
 .hide {
@@ -596,4 +622,7 @@ a:active {
   position: fixed;
   top: 0;
   left: 0;
+}
+.no-hover:hover img {
+  opacity: 1;
 }
