@@ -84,6 +84,7 @@ p {
 }
 li {
   font-style: italic;
+  color: white;
 }
 .small {
   font-size: 2rem;
@@ -459,7 +460,10 @@ a:active {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
 .post h2 {
-  padding-top: 20px;
+  padding-top: 15px;
+}
+.post p {
+  padding-bottom: 10px;
 }
 .mobile-hide {
   display: none;
@@ -597,8 +601,11 @@ a:active {
   .blog-post {
     width: 80%;
   }
-  .post img {
+  .two img {
     width: 49%;
+  }
+  .three img {
+    width: 33%;
   }
   .half {
     width: 50%;
