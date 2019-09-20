@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>We are Knytt - Blog</title>
+  <link>https://weareknytt.com/blog/</link>
+  <description>Blog about graphic design for board games</description>
+  <item>
+    <title>A card for every occasion - Situation based card design</title>
+    <link>https://weareknytt.com/blog/a-card-for-every-occasion</link>
+    <description>We need to talk about card design. You might think that designing a card is just slapping all the necessary information on the card in some arbitrary way, but that’s almost as far from the truth as you can come. You have to customize the card design to how the game is being played, and how the cards are being used.</description>
+  </item>
+  <item>
+    <title>UX design in board games - Why does it matter?</title>
+    <link>https://weareknytt.com/blog/UX-design-in-board-games</link>
+    <description>The term UX design is most commonly used in the context of web and app design, and thus, may not be what comes to mind in relation to the very analog concept of board games. However, I believe that, in many regards, the exact same principles apply to both fields.</description>
+  </item>
+</channel>
+
+</rss>

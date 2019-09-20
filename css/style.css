@@ -453,11 +453,13 @@ a:active {
   height: 100%;
   padding: 5px 0;
 }
-.blog-post hr {
-  width: 80%;
+hr {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+.blog-post hr {
+  width: 80%;
 }
 .post h2 {
   padding-top: 15px;
