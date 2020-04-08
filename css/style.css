@@ -612,15 +612,25 @@ hr {
   .half {
     width: 50%;
   }
-  .full {
-    width: calc(100vw/2);
-  }
   .half h1 {
     margin: 20px calc(100vw/4);
   }
   .half img {
-        margin: auto;
-        transform: translateX(-50%);
+    margin: auto;
+    transform: translateX(-50%);
+  }
+  .fourth {
+    width: 25%;
+  }
+  .fourth h1 {
+    margin: 20px calc(100vw/8);
+  }
+  .fourth img {
+    margin: auto;
+    transform: translateX(-50%);
+  }
+  .full {
+    width: calc(100vw/2);
   }
 }
 /*Allmän CSS igen*/
