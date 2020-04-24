@@ -111,6 +111,7 @@ li {
 }
 .centered {
   text-align: center;
+  margin:0 auto;
 }
 .flex {
   display: flex;
@@ -123,6 +124,7 @@ li {
 }
 .mobile-column {
   flex-direction: column;
+  width: 100%;
 }
 .align-start {
   align-items: flex-start;
@@ -589,6 +591,15 @@ hr {
     width: 100%;
     height: 100%;
     transform: none;
+  }
+  .half-image {
+    width: 50%;
+    height: 50%;
+    margin-right: 5%;
+    display: block;
+  }
+  .centered {
+    margin: 0 auto;
   }
   .case {
     width: 75%;
