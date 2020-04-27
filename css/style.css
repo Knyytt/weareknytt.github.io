@@ -132,6 +132,9 @@ li {
 .align-end {
   align-self: flex-end;
 }
+.align-center {
+  align-items: center;
+}
 .icon-grid {
   display: grid;
   grid-template-columns: [icons] min-content [text] auto;
