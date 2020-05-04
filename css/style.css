@@ -179,9 +179,27 @@ button {
   -webkit-box-shadow: 0px 0px 10px 0px black;
   box-shadow:         0px 0px 10px 0px black;
 }
-.testimonial {
-  width: 40vw;
-  margin: auto;
+.quote {
+  font-size: 5rem;
+  font-style: italic;
+  margin-top: -30px;
+  font-family: 'Cinzel', 'josefin sans', sans-serif;
+}
+.case .quote {
+  align-self: flex-start;
+  margin-top: 25px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.slide {
+  width: 900px;
+}
+.case .testimonial {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.case .testimonial p:nth-of-type(1) {
+  padding-bottom: 10px;
 }
 .testimonial p:nth-of-type(1) {
   font-style: italic;
@@ -278,7 +296,6 @@ i {
 .more {
 	display: none;
 }
-/*Slide.JS css*/
 .container {
   margin:0 auto 40px;;
   width: 100%;
@@ -290,49 +307,6 @@ i {
   display: block;
   width: 100% ;
   margin-top: 80px;
-}
-.slide { /*add class to all slides*/
-  display: none;
-  width: 100%;
-}
-/*navigation*/
-.slidesjs-navigation {
-  margin-top:3px;
-  margin-right: 5px;
-  float: left;
-}
-.slidesjs-previous {
-
-}
-.slidesjs-next {
-
-}
-/*pagination*/
-.slidesjs-pagination {
-  margin: 6px 0 0;
-  float: right;
-  list-style: none;
-}
-.slidesjs-pagination li {
-  float: left;
-  margin: 0 1px;
-}
-.slidesjs-pagination li a {
-  display: block;
-  width: 13px;
-  height: 0;
-  padding-top: 13px;
-  background-image: url(../img/pagination.png);
-  background-position: 0 0;
-  float: left;
-  overflow: hidden;
-}
-.slidesjs-pagination li a.active,
-.slidesjs-pagination li a:hover.active {
-  background-position: 0 -13px;
-}
-.slidesjs-pagination li a:hover {
-  background-position: 0 -26px;
 }
 /*links*/
 a {
@@ -504,8 +478,6 @@ hr {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-}
-.blog-post hr {
   width: 80%;
 }
 .post h2 {
@@ -598,6 +570,7 @@ hr {
   .footer {
     position: fixed;
     display: flex;
+    justify-content: center;
     bottom: 0;
     left: 0;
     width: 100%;
