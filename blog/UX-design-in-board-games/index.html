@@ -18,10 +18,19 @@
   <!--header start-->
     <div class="black header flex">
         <a href="../../"><img class="headerlogo" src="../../img/Logo_white.png" alt="We are Knytt"></a>
-        <div class="flex menu">
-          <a href="../../blog"><img src="../../img/blog.png" alt="Blog"></a>
-          <a href="../../whoisknytt"><img src="../../img/whoisknytt.png" alt="Who is Knytt?"></a>
+        <!--menu start-->
+        <div class="menu flex column">
+          <img src="../../img/hamburger-menu.png" alt="Menu" class="menu-button" onclick="menuButton()">
+          <img src="../../img/menu-close.png" alt="Menu" class="menu-close menu-button hide hidden-hex" onclick="menuButton()">
+          <a href="../../projects" class="menu-hex left hide hidden-hex"><img src="../../img/projects.png" alt="Projects"></a>
+          <div class="menu-hex">
+            <a href="../../consulting" class="hide hidden-hex"><img src="../../img/consulting.png" alt="Consulting"></a>
+            <a href="../../testimonials" class="hide hidden-hex"><img src="../../img/testimonials.png" alt="Testimonials"></a>
+          </div>
+          <a href="../../blog" class="menu-hex left hide hidden-hex"><img src="../../img/blog.png" alt="Blog"></a>
+          <a href="../../whoisknytt" class="menu-hex lefter hide hidden-hex"><img src="../../img/whoisknytt.png" alt="Who is Knytt?"></a>
         </div>
+        <!--menu end-->
   </div>
   <!--header end-->
   <video class="mobile-video" autoplay controls muted loop height="0">
