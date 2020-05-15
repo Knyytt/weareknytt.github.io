@@ -419,7 +419,6 @@ a:active {
 .square {
   height: 100%;
   background-color: white;
-  cursor: default;
   position: relative;
 }
 .square:hover {
@@ -471,6 +470,9 @@ a:active {
 .image-grid {
   margin-top: 15px;
   width: 100%;
+}
+.image-grid div {
+  cursor: default;
 }
 .case-image {
   width: 100vw;
@@ -721,4 +723,10 @@ hr {
 }
 .no-hover:hover img {
   opacity: 1;
+}
+.fill-all  {
+  width: 100%;
+}
+.half-width {
+  width: 50%;
 }
