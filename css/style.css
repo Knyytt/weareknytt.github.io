@@ -713,6 +713,10 @@ hr {
   }
 }
 /*Allmän CSS igen*/
+.material-icons.big-icon {
+  font-size: 6rem;
+  font-weight: 700;
+}
 .hide {
   display: none;
 }
