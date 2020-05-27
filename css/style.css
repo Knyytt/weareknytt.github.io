@@ -314,7 +314,7 @@ i {
   justify-content: flex-start;
 }
 .icons p {
-  margin: auto, 0;
+  margin: auto 0;
   padding-left: 2vh;
 }
 .introduction {
@@ -369,7 +369,8 @@ a:active {
 }
 .breadcrumbs span {
     font-size: 1.5rem;
-    line-height: 2;
+    position: relative;
+    top: 5px;
 }
 .current {
   font-size: 1.5rem;
@@ -665,9 +666,12 @@ hr {
   }
   .half-image {
     width: 50%;
-    height: 50%;
+    height: inherit;
     margin-right: 5%;
     display: block;
+  }
+  .half-image + p {
+    width: 50%;
   }
   .centered {
     margin: 0 auto;
