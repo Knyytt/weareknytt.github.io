@@ -445,6 +445,9 @@ a:active {
 .square:hover h1 {
   display: inline;
 }
+.slide1, .slide2, .slide3, .slide4, .slide5, .slide6 {
+  cursor: default;
+}
 .gradient-black {
   position: fixed;
   width: 100%;
