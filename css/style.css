@@ -483,6 +483,9 @@ a:active {
   padding: 5px 0;
   transform: translateX(-2.5%);
 }
+div.case-image {
+  padding: 0;
+}
 .blog-post {
   width: 100%;
 }
