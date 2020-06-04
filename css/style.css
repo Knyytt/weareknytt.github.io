@@ -416,9 +416,10 @@ a:active {
   position: relative;
   top: calc((100vh - 80px)/6);
   transform: translateY(-50%);
+  transition: all .2s ease-in-out;
 }
-.big-thumb:hover {
-  opacity: .5;
+.big-thumb:hover img {
+  transform: translateX(-50%) scale(1.1);
 }
 .square {
   height: 100%;
@@ -436,6 +437,7 @@ a:active {
 }
 .square:hover img{
   opacity: .5;
+  transform: none;
 }
 .square h1 {
   margin: auto;
