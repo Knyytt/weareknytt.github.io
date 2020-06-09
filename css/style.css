@@ -85,6 +85,9 @@ h4 {
 p {
   color: white;
 }
+p+p {
+  padding-top: 10px;
+}
 li {
   font-style: italic;
   color: white;
@@ -356,7 +359,7 @@ a:active {
 /*Breadcrumbs*/
 .breadcrumbs ul {
   list-style-type: none;
-  text-shadow: 0 0 10px #000000;
+  text-shadow: 0 0 5px #000000;
 }
 .breadcrumbs li {
   display: inline;
@@ -367,8 +370,8 @@ a:active {
   color: white;
 }
 .breadcrumbs a:hover {
-  color: #45492d;
-  text-shadow: 0 0 10px #000;
+  font-weight: 700;
+  text-shadow: 0 0 5px #000;
 }
 .breadcrumbs span {
     font-size: 1.5rem;
