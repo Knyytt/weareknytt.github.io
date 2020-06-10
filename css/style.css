@@ -413,6 +413,9 @@ a:active {
   margin: 0px calc(100vw/2);
   transform: translateX(-50%);
 }
+.thumbs .big-thumb h1 {
+  text-shadow: 0 0 10px #000;
+}
 .big-thumb img {
   width: 100%;
   display: block;
