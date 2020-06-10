@@ -366,7 +366,7 @@ a:active {
   vertical-align: middle;
   line-height: 2;
 }
-.breadcrumbs a, a:visited {
+.breadcrumbs a, .breadcrumbs a:visited {
   color: white;
 }
 .breadcrumbs a:hover {
