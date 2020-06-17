@@ -56,13 +56,16 @@ body {
   width: 100%;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 100%;
   color: white;
 }
+.big-thumb h1 {
+  font-size: 10vw;
+}
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 100%;
   padding-top: 20px;
@@ -81,6 +84,9 @@ h4 {
 }
 p {
   color: white;
+}
+p+p {
+  padding-top: 10px;
 }
 li {
   font-style: italic;
@@ -213,11 +219,7 @@ button {
 .menu img {
   position: relative;
   height: 70px;
-  margin: 0 2px;
-}
-.menu a {
-  position: relative;
-  filter: drop-shadow(0px 0px 3px black);
+  margin-bottom: 8px;
 }
 .headerlogo {
   margin-left: 50px;
@@ -231,26 +233,30 @@ button {
 }
 .menu {
   position: absolute;
-  right: 14px;
+  right: 0px;
   top: 5px;
   align-items: flex-end;
-}
-.menu-hex {
-  margin-top: -18px;
-}
-div.menu-hex {
-  position: relative;
-  right: -2px
+  filter: drop-shadow(0px 0px 3px black);
 }
 img.menu-button {
   margin-bottom: 8px;
-  right: -2px;
   cursor: pointer;
 }
 img.menu-close {
   position: fixed;
-  right: 12px;
-  top: 5px;
+}
+.extension {
+  display:none;
+  height: 70px;
+  margin-bottom: 8px;
+}
+.extension h3 {
+  color: #535b36;
+  line-height: 75px;
+  padding-right: 10px;
+}
+a.hidden-hex:hover .extension {
+  display:block;
 }
 .left {
   left: -32.5px;
@@ -353,19 +359,19 @@ a:active {
 /*Breadcrumbs*/
 .breadcrumbs ul {
   list-style-type: none;
-  text-shadow: 0 0 10px #000000;
+  text-shadow: 0 0 5px #000000;
 }
 .breadcrumbs li {
   display: inline;
   vertical-align: middle;
   line-height: 2;
 }
-.breadcrumbs a, a:visited {
+.breadcrumbs a, .breadcrumbs a:visited {
   color: white;
 }
 .breadcrumbs a:hover {
-  color: #45492d;
-  text-shadow: 0 0 10px #000;
+  font-weight: 700;
+  text-shadow: 0 0 5px #000;
 }
 .breadcrumbs span {
     font-size: 1.5rem;
@@ -407,15 +413,19 @@ a:active {
   margin: 0px calc(100vw/2);
   transform: translateX(-50%);
 }
+.thumbs .big-thumb h1 {
+  text-shadow: 0 0 10px #000;
+}
 .big-thumb img {
   width: 100%;
   display: block;
   position: relative;
   top: calc((100vh - 80px)/6);
   transform: translateY(-50%);
+  transition: all .2s ease-in-out;
 }
-.big-thumb:hover {
-  opacity: .5;
+.big-thumb:hover img {
+  transform: translateX(-50%) scale(1.1);
 }
 .square {
   height: 100%;
@@ -433,6 +443,7 @@ a:active {
 }
 .square:hover img{
   opacity: .5;
+  transform: none;
 }
 .square h1 {
   margin: auto;
@@ -546,6 +557,24 @@ hr {
   width: 100%;
 }
 @media (orientation: landscape) and (min-width: 810px) {
+  body {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .big-thumb h1 {
+    font-size: 3vw;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: .9rem;
+  }
   .mobile-column {
     flex-direction: row;
   }

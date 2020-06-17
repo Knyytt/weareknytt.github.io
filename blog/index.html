@@ -22,22 +22,42 @@
         <div class="menu flex column">
           <img src="../img/hamburger-menu.png" alt="Menu" class="menu-button" onclick="menuButton()">
           <img src="../img/menu-close.png" alt="Menu" class="menu-close menu-button hide hidden-hex" onclick="menuButton()">
-          <div class="menu-hex left">
-            <a href="../projects" class="hide hidden-hex"><img src="../img/projects.png" alt="Projects"></a>
-          </div>
-          <div class="menu-hex">
-            <a href="../consulting" class="hide hidden-hex"><img src="../img/consulting.png" alt="Consulting"></a>
-            <a href="../photography" class="hide hidden-hex"><img src="../img/photography.png" alt="Photography"></a>
-          </div>
-          <div class="menu-hex left">
-            <a href="../testimonials" class="hide hidden-hex"><img src="../img/testimonials.png" alt="Testimonials"></a>
-          </div>
-          <div class="menu-hex">
-            <a href="../blog" class="hide hidden-hex"><img src="../img/blog.png" alt="Blog"></a>
-          </div>
-          <div class="menu-hex left">
-            <a href="../whoisknytt" class="hide hidden-hex"><img src="../img/whoisknytt.png" alt="Who is Knytt?"></a>
-          </div>
+          <a href="../projects" class="hide hidden-hex"><div class="flex">
+            <img src="../img/projects.png" alt="Projects">
+            <div class="extension white">
+              <h3>Projects</h3>
+            </div>
+          </div></a>
+          <a href="../consulting" class="hide hidden-hex"><div class="flex">
+            <img src="../img/consulting.png" alt="Consulting">
+            <div class="extension white">
+              <h3>Consulting</h3>
+            </div>
+          </div></a>
+          <a href="../photography" class="hide hidden-hex"><div class="flex">
+            <img src="../img/photography.png" alt="Photography">
+            <div class="extension white">
+              <h3>Photography</h3>
+            </div>
+          </div></a>
+          <a href="../testimonials" class="hide hidden-hex"><div class="flex">
+            <img src="../img/testimonials.png" alt="Testimonials">
+            <div class="extension white">
+              <h3>Testimonials</h3>
+            </div>
+          </div></a>
+          <a href="../blog" class="hide hidden-hex"><div class="flex">
+            <img src="../img/blog.png" alt="Blog">
+            <div class="extension white">
+              <h3>Blog</h3>
+            </div>
+          </div></a>
+          <a href="../whoisknytt" class="hide hidden-hex"><div class="flex">
+            <img src="../img/whoisknytt.png" alt="Who is Knytt?">
+            <div class="extension white">
+              <h3>Who is Knytt?</h3>
+            </div>
+          </div></a>
         </div>
         <!--menu end-->
   </div>
@@ -48,9 +68,6 @@
   <video class="desktop-video" autoplay controls muted loop height="0">
     <source src="../img/images/blog/movie-desktop.mp4" type="video/mp4">
   </video>
-  <div class="grey round back-button flex">
-    <div class="mi"><a href="../"><i class="material-icons">keyboard_arrow_left</i></a></div>
-  </div>
   <div class="container"><div class="case">
     <div class="inner-container">
         <h1>Blog</h1>
@@ -60,6 +77,8 @@
             <h3>Archive</h3>
           </div>
           <ul>
+            <li>2020</li>
+            <li><a href="./graphic-design-and-illustration">Graphic design and illustrations</a></li>
             <li>2019</li>
             <li><a href="./a-card-for-every-occasion">A card for every occasion</a></li>
             <li><a href="./UX-design-in-board-games">UX design in board games</a></li>
@@ -72,8 +91,18 @@
         </div>
         <div class="flex column blog-post">
           <!--<hr>-->
+          <a class="preview-link" href="./graphic-design-and-illustration"><div class="flex column">
+          <h2>Graphic design and illustrations <span class="smaller">- What's the difference</span></h2>
+          <img src="../img/images/blog/13.jpg" alt="Graphic design in Quacks of Quedlinburg">
+          <p>A lot of people in the board gaming industry seem to be confused about the difference between graphic design and illustrations. Because of this, I want to clarify the terms, and explain why both are necessary for a great game. In short, illustrations are there to make the game pretty and the graphic design is there to make the game understandable. ...</p>
+          <div class="grey round flex align-end">
+            <div class="mi"><i class="material-icons">keyboard_arrow_right</i></div>
+          </div>
+          </div></a>
+          <hr>
+          <br>
           <a class="preview-link" href="./a-card-for-every-occasion"><div class="flex column">
-          <h2>A card for every occasion<span class="smaller">- Situation based card design</span></h2>
+          <h2>A card for every occasion <span class="smaller">- Situation based card design</span></h2>
           <img src="../img/images/blog/12.jpg" alt="Card design in Steampunk Rally">
           <p>We need to talk about card design. You might think that designing a card is just slapping all the necessary information on the card in some arbitrary way, but that’s almost as far from the truth as you can come. You have to customize the card design to how the game is being played, and how the cards are being used. ...</p>
           <div class="grey round flex align-end">
