@@ -84,9 +84,7 @@ h4 {
 }
 p {
   color: white;
-}
-p+p {
-  padding-top: 10px;
+  padding-bottom: 10px;
 }
 li {
   font-style: italic;
@@ -156,6 +154,7 @@ li {
 .icon-grid p, .icon-grid a {
   grid-column: text;
   align-self: center;
+  padding-bottom: 0px;
 }
 button {
   background-color: transparent;
@@ -199,6 +198,9 @@ button {
 }
 .slide {
   width: 900px;
+}
+.testimonial p {
+  padding-bottom: 0px;
 }
 .case .testimonial {
   padding-top: 5px;
@@ -480,7 +482,7 @@ a:active {
   width: 100%;
 }
 .case-parts {
-  margin-top: 40px;
+
 }
 .image-grid {
   margin-top: 15px;
