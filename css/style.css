@@ -113,10 +113,12 @@ li {
 .white {
   background-color: white;
 }
+/*
 .centered {
   text-align: center;
   margin:0 auto;
 }
+*/
 .flex {
   display: flex;
   justify-content: space-between;
@@ -412,7 +414,7 @@ a:active {
 .big-thumb h1 {
   position: absolute;
   bottom: 0;
-  margin: 0px calc(100vw/2);
+  margin: 10px calc(100vw/2);
   transform: translateX(-50%);
 }
 .thumbs .big-thumb h1 {
@@ -711,6 +713,7 @@ hr {
     width: 50%;
   }
   .centered {
+    text-align: center;
     margin: 0 auto;
   }
   .case {
