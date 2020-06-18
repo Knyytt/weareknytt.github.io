@@ -585,6 +585,9 @@ hr {
   .mobile-hide {
     display: block;
   }
+  .desktop-hide {
+    display: none;
+  }
   /*Header CSS*/
   .back-button {
     text-align: center;
