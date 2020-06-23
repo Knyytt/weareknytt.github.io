@@ -429,7 +429,7 @@ a:active {
   transition: all .2s ease-in-out;
 }
 .big-thumb:hover img {
-  transform: translateX(-50%) scale(1.1);
+  transform: translateY(-50%) scale(1.1);
 }
 .square {
   height: 100%;
@@ -619,10 +619,16 @@ hr {
   .big-thumb h1 {
     margin: 20px calc(100vw/6);
   }
+  .big-thumb:hover img {
+    transform: translateX(-50%) scale(1.1);
+  }
   .square img {
     width: 100%;
     height: auto;
     left: 0;
+    transform: none;
+  }
+  .square:hover img{
     transform: none;
   }
   .square h1 {
