@@ -346,6 +346,9 @@ i {
   width: 100% ;
   margin-top: 80px;
 }
+.video {
+  width: 100%;
+}
 /*links*/
 a {
   text-decoration: none;
@@ -737,6 +740,9 @@ hr {
   }
   .two img {
     width: 49%;
+  }
+  .two video {
+    width: 50%;
   }
   .three img {
     width: 33%;
