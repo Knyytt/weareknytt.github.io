@@ -90,6 +90,9 @@ li {
   font-style: italic;
   color: white;
 }
+p em {
+  font-style: italic;
+}
 .small {
   font-size: 2rem;
   font-weight: 700;
